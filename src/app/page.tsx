@@ -1,113 +1,393 @@
-import Image from "next/image";
+import Footer from '@/componentes/Footer/Footer';
+import Header from '@/componentes/Header/Header';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <main>
+      <Header />
+      <section>
+        <hr />
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          width={1920}
+          height={80}
+          src="/assets/bg/1.png"
+          alt="Banner do Wilson Automóveis"
         />
-      </div>
+        <hr />
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section>
+        <div>
+          <h1>Diversas marcas e modelos para você escolher !!</h1>
+          <hr />
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link href="/">HATCH</Link>
+              </li>
+              <li>
+                <Link href="/">PICK UP</Link>
+              </li>
+              <li>
+                <Link href="/">SUV</Link>
+              </li>
+              <li>
+                <Link href="/">SEDAN</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section>
+        <h1>Confira agora os nossos veículos em destaque !!</h1>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div>
+          <div>
+            <Image
+              width={310}
+              height={200}
+              src="/assets/img/1.png"
+              alt="logotipo Wilson Automóveis"
+            />
+            <h2>Ford Ranger XLS</h2>
+            <div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/20.svg"
+                  alt="Quilometragem"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/17.svg"
+                  alt="Ano"
+                />
+                <hr />
+                <p>2009</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/18.svg"
+                  alt="Combustível"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/19.svg"
+                  alt="Valor"
+                />
+                <hr />
+                <p>57.990</p>
+                <hr />
+              </div>
+            </div>
+            <Link href="/">Detalhes</Link>
+          </div>
+
+          <div>
+            <Image
+              width={310}
+              height={200}
+              src="/assets/img/1.png"
+              alt="logotipo Wilson Automóveis"
+            />
+            <h2>Ford Ranger XLS</h2>
+            <div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/20.svg"
+                  alt="Quilometragem"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/17.svg"
+                  alt="Ano"
+                />
+                <hr />
+                <p>2009</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/18.svg"
+                  alt="Combustível"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/19.svg"
+                  alt="Valor"
+                />
+                <hr />
+                <p>57.990</p>
+                <hr />
+              </div>
+            </div>
+            <Link href="/">Detalhes</Link>
+          </div>
+
+          <div>
+            <Image
+              width={310}
+              height={200}
+              src="/assets/img/1.png"
+              alt="logotipo Wilson Automóveis"
+            />
+            <h2>Ford Ranger XLS</h2>
+            <div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/20.svg"
+                  alt="Quilometragem"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/17.svg"
+                  alt="Ano"
+                />
+                <hr />
+                <p>2009</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/18.svg"
+                  alt="Combustível"
+                />
+                <hr />
+                <p>120 Km</p>
+                <hr />
+              </div>
+              <div>
+                <Image
+                  width={36}
+                  height={36}
+                  src="/assets/icons/19.svg"
+                  alt="Valor"
+                />
+                <hr />
+                <p>57.990</p>
+                <hr />
+              </div>
+            </div>
+            <Link href="/">Detalhes</Link>
+          </div>
+        </div>
+
+        <div>
+          <Link href="/">Mostrar todos os veículos</Link>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <Image
+            width={1920}
+            height={300}
+            alt="Carro"
+            src="/assets/img/2.png"
+          />
+        </div>
+        <div>
+          <h1>Quer comprar ou vender seu veículo?</h1>
+          <p>
+            Pode colocar os seus carros à venda, registrando-se no nosso site.
+            Venda o seu veículo da forma rápida e transparente. Cuidamos de toda
+            parte burocrática para você.
           </p>
-        </a>
-      </div>
+          <div>
+            <Image
+              width={200}
+              height={200}
+              alt="Carro"
+              src="/assets/icons/1.svg"
+            />
+            <h2>Diversos modelos</h2>
+            <p>
+              Temos certeza de que você encontrará veículos de modelos adequados
+              em nosso site.
+            </p>
+          </div>
+          <div>
+            <Image
+              width={220}
+              height={200}
+              alt="Carro"
+              src="/assets/icons/2.svg"
+            />
+            <h2>Seminovos</h2>
+            <p>Todos os carros são revisados e possuem garantia de 90 dias</p>
+          </div>
+        </div>
+        <Link href="/contato">Sale conosco</Link>
+      </section>
+      <section>
+        <Image width={1920} height={300} alt="Carro" src="/assets/bg/2.png" />
+        <Image width={300} height={300} alt="Like" src="/assets/icons/3.svg" />
+        <h1>O que os nossos clientes estão dizendo?</h1>
+        <p>Opine você também!</p>
+        <div>
+          <Image
+            width={75}
+            height={75}
+            alt="perfil"
+            src="/assets/icons/29.svg"
+          />
+          <p>
+            Sou motorista de aplicativo e preciso do carro para trabalhar e na
+            Wilson automóveis eu encontrei a oportunidade perfeita que cabia no
+            meu bolso aliado a ótimas condições de pagamento e financiamento!
+            Estou muito feliz e indico a Wilson Automóveis para amigos e
+            familiares
+          </p>
+        </div>
+        <div>
+          <Image
+            width={75}
+            height={75}
+            alt="perfil"
+            src="/assets/icons/29.svg"
+          />
+          <p>
+            Sou motorista de aplicativo e preciso do carro para trabalhar e na
+            Wilson automóveis eu encontrei a oportunidade perfeita que cabia no
+            meu bolso aliado a ótimas condições de pagamento e financiamento!
+            Estou muito feliz e indico a Wilson Automóveis para amigos e
+            familiares
+          </p>
+        </div>
+        <div>
+          <Image
+            width={75}
+            height={75}
+            alt="perfil"
+            src="/assets/icons/29.svg"
+          />
+          <p>
+            Sou motorista de aplicativo e preciso do carro para trabalhar e na
+            Wilson automóveis eu encontrei a oportunidade perfeita que cabia no
+            meu bolso aliado a ótimas condições de pagamento e financiamento!
+            Estou muito feliz e indico a Wilson Automóveis para amigos e
+            familiares
+          </p>
+        </div>
+        <div>
+          <Image
+            width={75}
+            height={75}
+            alt="perfil"
+            src="/assets/icons/29.svg"
+          />
+          <p>
+            Sou motorista de aplicativo e preciso do carro para trabalhar e na
+            Wilson automóveis eu encontrei a oportunidade perfeita que cabia no
+            meu bolso aliado a ótimas condições de pagamento e financiamento!
+            Estou muito feliz e indico a Wilson Automóveis para amigos e
+            familiares
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <Image width={300} height={300} alt="Like" src="/assets/icons/4.svg" />
+        <h1>Últimos conteúdos</h1>
+        <p>Fique por dentro do mercado automotivo</p>
+
+        <div>
+          <Image
+            width={150}
+            height={150}
+            alt="celular"
+            src="/assets/icons/5.svg"
+          />
+          <p>Saiba como baixar seu CRLV digital.</p>
+          <Link href="/">Leia Mais</Link>
+        </div>
+        <div>
+          <Image
+            width={150}
+            height={150}
+            alt="painel"
+            src="/assets/icons/6.svg"
+          />
+          <p>Como identificar quilometragem adulterada?</p>
+          <Link href="/">Leia Mais</Link>
+        </div>
+        <div>
+          <Image
+            width={150}
+            height={150}
+            alt="Morista"
+            src="/assets/icons/7.svg"
+          />
+          <p>
+            Afinal, vale a pena ser motorista de aplicativo? Que carro você
+            precisa ter?{' '}
+          </p>
+          <Link href="/">Leia Mais</Link>
+        </div>
+        <div>
+          <Image
+            width={150}
+            height={150}
+            alt="CNH suspesnsa"
+            src="/assets/icons/8.svg"
+          />
+          <p>
+            Cuidado para não ter a sua CNH suspensa, verifique agora sua
+            pontuação!
+          </p>
+          <Link href="/">Leia Mais</Link>
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
