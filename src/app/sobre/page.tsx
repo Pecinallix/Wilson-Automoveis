@@ -1,102 +1,89 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SobrePage() {
   return (
-    <section>
-      <div className="bg-[url('/assets/bg/2.png')] h-64 sm:h-[380px] -mt-36 flex flex-col justify-center items-center gap-6 sm:gap-9 text-white p-4 sm:p-8">
-        <h1 className="text-2xl sm:text-4xl font-light uppercase text-center mt-36">
-          QUEM SOMOS
-        </h1>
-        <p className="text-base sm:text-lg">Nossa história</p>
-      </div>
-      <div className="text-center my-10">
-        <h1 className="text-3xl font-semibold">O Início da JM Rodrigues</h1>
-        <p className="max-w-3xl m-auto p-4">
-          Nossa história sempre foi acompanhada de muita dedicação e esforço,
-          trabalhamos duro e nos esforçamos desde o início para entregar
-          produtos de excelente qualidade, sempre prezando pelo respeito mútuo
-          entre nossos colaboradores.
-        </p>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-10 my-10">
-        <div className="flex flex-col sm:flex-row items-center text-center bg-white  rounded-lg shadow-md">
+    <section className="h-screen flex flex-col justify-center">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-4 w-96 md:w-[600px] xl:w-full mx-auto">
+        <div className="shadow-md mx-4">
           <Image
-            src="/assets/img/1.png"
-            width={500}
-            height={500}
-            alt="foto da madeireira"
-            className="w-full sm:w-auto"
+            src="/assets/img/4.png"
+            alt="chave de carro"
+            width={650}
+            height={600}
+            className="xl:w-[650px]"
           />
-          <div className="p-4 flex flex-col items-center">
-            <h1 className="text-2xl mb-4 sm:mb-10 border-b border-yellow-500 pb-2">
-              Nossa história começa em 20/08/1995
-            </h1>
-            <p className="max-w-3xl">
-              A trajetória da JM Rodrigues iniciou-se em 20 de agosto de 1995,
-              enfrentando inúmeros desafios. Desde o princípio, dedicamo-nos à
-              venda de madeiras para obras, com foco na qualidade e no
-              compromisso. Superando as dificuldades iniciais, conquistamos a
-              confiança de nossos clientes, estabelecendo uma reputação sólida
-              no mercado. Este período inicial, marcado por muito esforço e
-              determinação, foi fundamental para consolidar os valores que
-              praticamos até hoje.
-            </p>
-          </div>
         </div>
-        <div className="flex flex-col sm:flex-row items-center text-center bg-white  rounded-lg shadow-md">
+        <div className="mx-4 xl:w-[650px]">
+          <h1 className="text-4xl xl:text-6xl mb-3">Quem somos</h1>
+          <p className="xl:text-xl">
+            Com a proposta de priorizar o Atendimento ao cliente a satisfação da
+            compra e o respeito no pós venda, a Wilson automóveis vem se
+            destacando dia após dia no mercado de venda de carros novos e
+            semi-novos.
+          </p>
+          <p className="mt-4 xl:text-xl">
+            Hoje em dia é muito fácil fechar uma venda de veículo. O cliente sai
+            da sua loja feliz pela conquista porém, alguns dias depois esse
+            sentimento é substituído pela frustração por conta de pendências
+            burocráticas,aperto financeiro e até mesmo por problemas com o
+            próprio veículo.
+          </p>
+          <p className="mt-4 xl:text-xl">
+            É por isso que nós da Wilson Automóveis nos preocupamos com a venda
+            como um todo. Provendo sempre todo o suporte ao cliente para que ele
+            tenha que se preocupar o mínimo possível com cartórios, vistorias,
+            revisões (todos os veículos já saem revisados) e pagamento de
+            parcelas. Procuramos saber das reais possibilidades financeiras dos
+            clientes para que o negócio certo se encaixe na sua rotina sem gerar
+            apertos financeiros. E isso é ótimo pois podemos dizer que nossos
+            clientes saem daqui satisfeitos e permanecem satisfeitos por muito
+            tempo”.
+          </p>
+          <p className="mt-4">Flávio Diretor da Wilson Automóveis</p>
+        </div>{' '}
+        *
+      </div>
+      <div className="flex items-center sm:flex-row flex-wrap justify-center gap-8 mt-24">
+        <div className="w-80 h-72 bg-[#EDEEF4] rounded-lg shadow-md flex flex-col justify-center items-center">
           <Image
-            src="/assets/img/2.png"
-            width={500}
-            height={500}
-            alt="foto da madeireira"
-            className="w-full sm:w-auto"
+            src="/assets/icons/24.svg"
+            alt="chave de carro"
+            width={180}
+            height={180}
           />
-          <div className="p-4 flex flex-col items-center">
-            <h1 className="text-2xl mb-4 sm:mb-10 border-b border-yellow-500 pb-2">
-              Muita luta e garra
-            </h1>
-            <p className="max-w-3xl">
-              A história da JM Rodrigues é marcada por uma trajetória de muita
-              luta e garra. Após os desafios iniciais, nossa dedicação e
-              perseverança continuaram a ser postos à prova. Enfrentamos o
-              mercado competitivo e a necessidade constante de inovação, sempre
-              com o objetivo de atender às necessidades dos nossos clientes.
-              Cada obstáculo superado fortaleceu nossa empresa e nossa equipe,
-              consolidando nossa posição no setor de madeiras para obras.
-              Acreditamos que é essa determinação incansável que nos distingue,
-              permitindo-nos oferecer produtos de alta qualidade e um serviço
-              excepcional.
-            </p>
-          </div>
+          <p className="text-xl font-medium mt-2">Tradição</p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center text-center bg-white  rounded-lg shadow-md">
+
+        <div className="w-80 h-72 bg-[#EDEEF4] rounded-lg shadow-md flex flex-col justify-center items-center">
           <Image
-            src="/assets/img/1.png"
-            width={500}
-            height={500}
-            alt="foto da madeireira"
-            className="w-full sm:w-auto"
+            src="/assets/icons/25.svg"
+            alt="chave de carro"
+            width={180}
+            height={180}
           />
-          <div className="p-4 flex flex-col items-center">
-            <h1 className="text-2xl mb-4 sm:mb-10 border-b border-yellow-500 pb-2">
-              Hoje em 2024
-            </h1>
-            <p className="max-w-3xl">
-              Em 2024, nos orgulhamos da nossa trajetória e das conquistas
-              alcançadas ao longo dos anos. O que começou como um pequeno
-              empreendimento em 1995, hoje é uma referência no setor de madeiras
-              para obras. Nosso compromisso com a qualidade e a satisfação do
-              cliente continua a ser o pilar de nossas operações. Investimos
-              continuamente em tecnologia e inovação para atender às demandas do
-              mercado e superar as expectativas de nossos clientes. Nossa
-              equipe, altamente capacitada, compartilha da mesma visão e
-              dedicação que nos impulsionaram desde o início. Estamos preparados
-              para enfrentar o futuro com confiança, mantendo nossos valores e a
-              excelência que nos definem.
-            </p>
-          </div>
+          <p className="text-xl font-medium mt-2">Atendimento</p>
+        </div>
+
+        <div className="w-80 h-72 bg-[#EDEEF4] rounded-lg shadow-md flex flex-col justify-center items-center">
+          <Image
+            src="/assets/icons/26.svg"
+            alt="chave de carro"
+            width={180}
+            height={180}
+          />
+          <p className="text-xl font-medium mt-2">Estoque</p>
+        </div>
+
+        <div className="w-80 h-72 bg-[#EDEEF4] rounded-lg shadow-md flex flex-col justify-center items-center">
+          <Image
+            src="/assets/icons/27.svg"
+            alt="chave de carro"
+            width={180}
+            height={180}
+          />
+          <p className="text-xl font-medium mt-2">Financiamento</p>
         </div>
       </div>
     </section>
