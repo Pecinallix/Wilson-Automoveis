@@ -1,8 +1,8 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { getProductsDestaqueAction } from "@/action/produtos/get-produtos-action";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { getProductsDestaqueAction } from '@/action/produtos/get-produtos-action';
 
 export default function GetProdutosDestaque() {
   const [produtos, setProdutos] = useState([]);
@@ -20,7 +20,7 @@ export default function GetProdutosDestaque() {
         }
       } catch (err) {
         setError(
-          "Não foi possível carregar os produtos. Por favor, tente novamente mais tarde."
+          'Não foi possível carregar os produtos. Por favor, tente novamente mais tarde.',
         );
       } finally {
         setLoading(false);
@@ -66,11 +66,11 @@ export default function GetProdutosDestaque() {
                 De: R$ {produto.preco_original}
               </p>
               <p className="w-full">
-                Por:{" "}
+                Por:{' '}
                 <span className="font-bold text-2xl text-red-600">
-                  {" "}
+                  {' '}
                   R$ {produto.preco}
-                </span>{" "}
+                </span>{' '}
                 <span>a vista</span>
               </p>
               <p className="w-full text-sm">
