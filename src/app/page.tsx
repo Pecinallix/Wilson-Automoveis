@@ -469,12 +469,12 @@ export default function Home() {
           </h1>
           <p className="text-lg mb-8">Fique por dentro do mercado automotivo</p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 mb-10">
           <div className="bg-white p-6 rounded-lg shadow-md w-96">
-            <div className="flex justify-center items-center mb-4">
+            <div className="flex items-center justify-center mb-4">
               <Image
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 alt="celular"
                 src="/assets/icons/6.svg"
                 className="rounded-lg"
@@ -485,8 +485,8 @@ export default function Home() {
               <br /> CRLV digital.
             </p>
             <Link
-              href="/"
-              className="block text-center text-white bg-red-500 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-600"
+              href="/crlv"
+              className="text-center text-white bg-red-500 px-8 py-2 rounded-md transition-colors duration-300 hover:bg-red-600 font-semibold"
             >
               Leia Mais
             </Link>
@@ -495,8 +495,8 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md w-96">
             <div className="flex justify-center mb-4">
               <Image
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 alt="painel"
                 src="/assets/icons/7.svg"
                 className="rounded-lg"
@@ -504,8 +504,8 @@ export default function Home() {
             </div>
             <p className="mb-4">Como identificar quilometragem adulterada?</p>
             <Link
-              href="/"
-              className="block text-center text-white bg-red-500 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-600"
+              href="/km"
+              className="text-center text-white bg-red-500 px-8 py-2 rounded-md transition-colors duration-300 hover:bg-red-600 font-semibold"
             >
               Leia Mais
             </Link>
@@ -514,8 +514,8 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md w-96">
             <div className="flex justify-center mb-4">
               <Image
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 alt="Morista"
                 src="/assets/icons/8.svg"
                 className="rounded-lg"
@@ -526,8 +526,8 @@ export default function Home() {
               precisa ter?
             </p>
             <Link
-              href="/"
-              className="block text-center text-white bg-red-500 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-600"
+              href="/motorista"
+              className="text-center text-white bg-red-500 px-8 py-2 rounded-md transition-colors duration-300 hover:bg-red-600 font-semibold"
             >
               Leia Mais
             </Link>
@@ -536,8 +536,8 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md w-96">
             <div className="flex justify-center mb-4">
               <Image
-                width={150}
-                height={150}
+                width={250}
+                height={250}
                 alt="CNH suspensa"
                 src="/assets/icons/9.svg"
                 className="rounded-lg"
@@ -548,8 +548,8 @@ export default function Home() {
               pontuação!
             </p>
             <Link
-              href="/"
-              className="block text-center text-white bg-red-500 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-600"
+              href="/cnh"
+              className="text-center text-white bg-red-500 px-8 py-2 rounded-md transition-colors duration-300 hover:bg-red-600 font-semibold"
             >
               Leia Mais
             </Link>

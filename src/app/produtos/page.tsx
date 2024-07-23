@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import FiltroComponent from "@/componentes/FiltroComponente";
-import CategoriasMenu from "@/componentes/Produtos/CategoriasMenu";
-import GetProdutosDestaque from "@/componentes/Produtos/ProdutosGet";
+import CategoriasMenu from '@/componentes/Produtos/CategoriasMenu';
+import GetProdutosDestaque from '@/componentes/Produtos/ProdutosGet';
 
 export default function produtosPage() {
   return (
